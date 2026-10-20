@@ -1,0 +1,30 @@
+@startuml
+skinparam componentStyle rectangle
+skinparam monochrome true
+
+actor User
+component "Web UI" as UI
+component "NES Runtime" as NES
+component "6502 CPU" as CPU
+component "Memory Bus" as BUS
+component "PPU" as PPU
+component "APU" as APU
+component "Controller" as PAD
+component "Cartridge" as CART
+component "Mapper" as MAP
+component "Game Catalog" as CAT
+
+User --> UI
+UI --> NES
+UI --> CAT
+NES --> CPU
+NES --> PPU
+NES --> APU
+NES --> PAD
+CPU --> BUS
+BUS --> PPU
+BUS --> APU
+BUS --> PAD
+BUS --> MAP
+MAP --> CART
+@enduml
