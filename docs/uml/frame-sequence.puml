@@ -1,0 +1,18 @@
+@startuml
+actor Scheduler
+participant CPU
+participant Bus
+participant PPU
+participant APU
+participant Controller
+
+Scheduler -> CPU: execute instruction
+CPU -> Bus: read/write memory
+Bus -> PPU: PPU register access
+Bus -> APU: APU register access
+Bus -> Controller: controller read
+PPU --> Scheduler: PPU dots / frame progress
+APU --> Scheduler: audio samples
+CPU --> Scheduler: consumed CPU cycles
+Scheduler -> CPU: next clock slice
+@enduml
