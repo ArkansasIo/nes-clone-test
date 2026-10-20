@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#101820"><title>NES Clone Test</title></head>
+<body>
+  <main class="app">
+    <header><p class="eyebrow">RETRO SYSTEMS LAB</p><h1>NES CLONE</h1><p>Clean-room emulator foundation and game catalog</p></header>
+    <section class="console">
+      <div class="screen-frame"><canvas id="screen" width="256" height="240" aria-label="NES video output"></canvas></div>
+      <div class="console-meta"><span>VIDEO OUTPUT · 256 × 240</span><span id="status">SYSTEM READY</span></div>
+    </section>
+    <section class="catalog">
+      <div class="catalog-heading"><div><p class="eyebrow">LIBRARY</p><h2>Game categories</h2></div><input id="filter" aria-label="Filter categories" placeholder="Filter categories…"></div>
+      <div id="categories" class="category-grid"></div>
+    </section>
+    <footer>Use legally obtained homebrew ROMs only. ROM loading will be wired into the cartridge parser in a later stage.</footer>
+  </main>
+  <script type="module" src="/src/main.ts"></script>
+</body></html>
