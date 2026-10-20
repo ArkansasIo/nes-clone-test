@@ -1,0 +1,18 @@
+@startuml
+package "src" {
+ package "nes" {
+  package "cpu"
+  package "memory"
+  package "ppu"
+  package "apu"
+  package "cartridge"
+  package "mappers"
+  package "input"
+ }
+ package "catalog"
+}
+package "tests"
+package "docs" {
+ package "uml"
+}
+@enduml
