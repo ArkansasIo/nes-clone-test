@@ -1,0 +1,68 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+class NES {
+ +reset()
+ +renderFrame()
+}
+class CPU6502 {
+ +pc
+ +sp
+ +a
+ +x
+ +y
+ +p
+ +step()
+ +reset()
+}
+class Bus {
+ +read(address)
+ +write(address,value)
+ +read16(address)
+}
+class PPU {
+ +readRegister(address)
+ +writeRegister(address,value)
+ +renderFrame()
+}
+class APU {
+ +clock()
+ +reset()
+}
+class Cartridge {
+ +header
+ +prgRom
+ +chrRom
+ +fromINES(bytes)
+}
+interface Mapper {
+ +cpuRead(address)
+ +cpuWrite(address,value)
+ +ppuRead(address)
+ +ppuWrite(address,value)
+}
+class Mapper000
+class Controller {
+ +press(button)
+ +release(button)
+ +isPressed(button)
+}
+class GameCatalog {
+ +add(game)
+ +all()
+ +byCategory(category)
+ +search(query)
+}
+
+NES *-- CPU6502
+NES *-- Bus
+NES *-- PPU
+NES *-- APU
+CPU6502 --> Bus
+Bus --> PPU
+Bus --> APU
+Bus --> Controller
+Bus --> Mapper
+Mapper <|.. Mapper000
+Mapper000 --> Cartridge
+@enduml
