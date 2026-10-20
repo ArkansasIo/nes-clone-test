@@ -1,0 +1,20 @@
+@startuml
+start
+:Read ROM bytes;
+:Validate NES signature;
+if (NES 2.0?) then (yes)
+  :Decode NES 2.0 sizes;
+else (no)
+  :Decode iNES header;
+endif
+:Validate PRG/CHR length;
+:Create Cartridge;
+:Select mapper;
+if (Mapper supported?) then (yes)
+  :Attach mapper to bus;
+  stop
+else (no)
+  :Report unsupported mapper;
+  stop
+endif
+@enduml
