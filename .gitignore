@@ -1,0 +1,7 @@
+node_modules/
+dist/
+coverage/
+*.sav
+*.state
+.env
+.DS_Store
