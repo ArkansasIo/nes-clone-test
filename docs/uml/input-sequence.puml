@@ -1,0 +1,14 @@
+@startuml
+actor Player
+participant "Keyboard/Gamepad" as Host
+participant Controller
+participant Bus
+participant CPU
+Player -> Host: press button
+Host -> Controller: update state
+CPU -> Bus: read $4016/$4017
+Bus -> Controller: serial read
+Controller --> Bus: next button bit
+Bus --> CPU: input bit
+CPU --> Player: game state response
+@enduml
