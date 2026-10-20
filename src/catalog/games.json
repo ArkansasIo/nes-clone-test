@@ -1,0 +1,30 @@
+{
+  "games": [
+    { "id": "super-mario-bros", "title": "Super Mario Bros.", "category": "platformer", "mapper": 0, "region": "NTSC" },
+    { "id": "zelda", "title": "The Legend of Zelda", "category": "adventure", "mapper": 1, "region": "NTSC" },
+    { "id": "metroid", "title": "Metroid", "category": "adventure", "mapper": 1, "region": "NTSC" },
+    { "id": "mega-man-2", "title": "Mega Man 2", "category": "action", "mapper": 0, "region": "NTSC" },
+    { "id": "castlevania", "title": "Castlevania", "category": "action", "mapper": 1, "region": "NTSC" },
+    { "id": "contra", "title": "Contra", "category": "shooter", "mapper": 4, "region": "NTSC" },
+    { "id": "excitebike", "title": "Excitebike", "category": "racing", "mapper": 0, "region": "NTSC" },
+    { "id": "tetris", "title": "Tetris", "category": "puzzle", "mapper": 0, "region": "NTSC" },
+    { "id": "dr-mario", "title": "Dr. Mario", "category": "puzzle", "mapper": 0, "region": "NTSC" },
+    { "id": "duck-hunt", "title": "Duck Hunt", "category": "shooter", "mapper": 0, "region": "NTSC" },
+    { "id": "double-dragon", "title": "Double Dragon", "category": "action", "mapper": 1, "region": "NTSC" },
+    { "id": "final-fantasy", "title": "Final Fantasy", "category": "rpg", "mapper": 4, "region": "NTSC" },
+    { "id": "dragon-warrior", "title": "Dragon Warrior", "category": "rpg", "mapper": 1, "region": "NTSC" },
+    { "id": "fire-n-ice", "title": "Fire 'n Ice", "category": "puzzle", "mapper": 0, "region": "NTSC" },
+    { "id": "river-city-ransom", "title": "River City Ransom", "category": "action", "mapper": 4, "region": "NTSC" },
+    { "id": "paperboy", "title": "Paperboy", "category": "simulation", "mapper": 0, "region": "NTSC" },
+    { "id": "bases-loaded", "title": "Bases Loaded", "category": "sports", "mapper": 1, "region": "NTSC" },
+    { "id": "ice-hockey", "title": "Ice Hockey", "category": "sports", "mapper": 0, "region": "NTSC" },
+    { "id": "star-force", "title": "Star Force", "category": "shooter", "mapper": 3, "region": "NTSC" },
+    { "id": "pac-man", "title": "Pac-Man", "category": "arcade", "mapper": 0, "region": "NTSC" },
+    { "id": "galaga", "title": "Galaga", "category": "arcade", "mapper": 0, "region": "NTSC" },
+    { "id": "bubble-bobble", "title": "Bubble Bobble", "category": "arcade", "mapper": 4, "region": "NTSC" },
+    { "id": "simcity", "title": "SimCity", "category": "strategy", "mapper": 4, "region": "NTSC" },
+    { "id": "adventure-island", "title": "Adventure Island", "category": "platformer", "mapper": 4, "region": "NTSC" },
+    { "id": "kirby-adventure", "title": "Kirby's Adventure", "category": "platformer", "mapper": 4, "region": "NTSC" },
+    { "id": "homebrew-template", "title": "NES Homebrew Template", "category": "homebrew", "mapper": 0, "region": "NTSC", "notes": "Use for original or legally distributed ROM development." }
+  ]
+}
