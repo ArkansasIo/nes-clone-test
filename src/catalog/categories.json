@@ -1,0 +1,69 @@
+{
+  "categories": [
+    {
+      "id": "action",
+      "name": "Action",
+      "description": "Fast reflexes and combat"
+    },
+    {
+      "id": "adventure",
+      "name": "Adventure",
+      "description": "Exploration and story"
+    },
+    {
+      "id": "arcade",
+      "name": "Arcade",
+      "description": "Score-chasing classics"
+    },
+    {
+      "id": "platformer",
+      "name": "Platformer",
+      "description": "Jumping and obstacle courses"
+    },
+    {
+      "id": "rpg",
+      "name": "Role-Playing",
+      "description": "Characters, stats and quests"
+    },
+    {
+      "id": "strategy",
+      "name": "Strategy",
+      "description": "Tactical decision-making"
+    },
+    {
+      "id": "puzzle",
+      "name": "Puzzle",
+      "description": "Logic and problem-solving"
+    },
+    {
+      "id": "sports",
+      "name": "Sports",
+      "description": "Sports and competitions"
+    },
+    {
+      "id": "racing",
+      "name": "Racing",
+      "description": "Driving and time trials"
+    },
+    {
+      "id": "shooter",
+      "name": "Shooter",
+      "description": "Projectile-focused gameplay"
+    },
+    {
+      "id": "simulation",
+      "name": "Simulation",
+      "description": "Systems and simulated activities"
+    },
+    {
+      "id": "education",
+      "name": "Education",
+      "description": "Learning and reference"
+    },
+    {
+      "id": "homebrew",
+      "name": "Homebrew / Utility",
+      "description": "User-made games and tools"
+    }
+  ]
+}
